@@ -1,5 +1,3 @@
-
-
 //Breakpoints
 
 @mixin breakpoint($class) {
@@ -23,18 +21,12 @@
       @warn "Breakpoint mixin supports: xs, sm, md, lg";
     }
   }
-//     @include breakpoint(sm) {
-//       float: none;
-//       width: 100%;
-//     }
-//   }
-
 
 //Colors 
-$yellow:#F8CC2A;
+$yellow:#fae596;
 $red:#ED7864;
-$teal:#346665; 
-$black:#071B19;
+$teal:#173e43; 
+$lblue: #3fb0ac;
 $cream:#EEE0CB;
 
 
@@ -56,6 +48,9 @@ $cream:#EEE0CB;
       transform: translate(-50%,-50%);
     }
   }
+
+
+
 
 
 //////////clearfix 

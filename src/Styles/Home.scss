@@ -1,7 +1,52 @@
 @import 'variables.scss';
-
 body {
-    margin: 0px;
-    padding: 0px;
+    padding-top: 100px;
 }
 
+#home-jumbotron {
+    margin-top: 0px;
+    font-size: 3.7rem;
+    height: 800px;
+    background-color: grey;
+    border-radius: 0;
+}
+
+#social-links {
+    height: 50px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    
+    i {
+        font-size: 3rem;
+    }
+
+    a {
+        height: 100%;
+        position: relative;
+    }
+}
+
+#twitter {
+    height: 100%;
+    border: 1px solid grey;
+    background-color: pink;
+}
+
+#facebook {
+    height: 100%;
+    border: 1px solid grey;
+    background-color: blue;
+}
+
+#instagram {
+    height: 100%;
+    border: 1px solid grey;
+    background-color: green;
+}
+
+#youtube {
+    height: 100%;
+    border: 1px solid grey;
+    background-color: red;
+}

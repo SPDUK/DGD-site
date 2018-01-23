@@ -1,12 +1,17 @@
 @import 'variables.scss';
 body {
     padding-top: 100px;
+    background: radial-gradient(circle, #282828, rgb(56, 56, 56));
+    @include breakpoint(md) {
+        padding-top: 150px;
+    }
 }
 
 #home-jumbotron {
     margin-bottom: 0;
     text-align: center;
-    background-color: grey;
+    background-color: rgb(40, 40, 40);
+    color:white;
     border-radius: 0;
     font-weight: 700;
     font-family: 'Bitter', serif;
@@ -35,11 +40,13 @@ body {
 }
 
 .social-links {
-    padding-top: 5px !important;
+    border-top: solid black 2px;
+    border-bottom:  solid black 2px;
+    padding-top: 2px !important;
     height: 50px;
     width: 100%;
     text-align: center;
-    background-color: rgb(40, 40, 54);
+    background-color: rgb(40, 40, 40);
     cursor: pointer;
     i {
         font-size: 2.5rem;
@@ -49,8 +56,13 @@ body {
     }
 }
 
+.row {
+    margin: 0px;
+    padding: 0px;
+}
 
 #twitter {
+    border-right: 1px solid black;
     height: 100%;
     color: rgba(255, 255, 255, 0.5);
     &:hover {
@@ -59,6 +71,7 @@ body {
 }
 
 #facebook {
+    border-right: 1px solid black;
     height: 100%;
     color: rgba(255, 255, 255, 0.5);
     &:hover {
@@ -67,6 +80,7 @@ body {
 }
 
 #instagram {
+    border-right: 1px solid black;
     height: 100%;
     color: rgba(255, 255, 255, 0.5);
     &:hover {
@@ -82,6 +96,7 @@ body {
     }
 }
 #amazon {
+    border-right: 1px solid black;
     height: 100%;
     color: rgba(255, 255, 255, 0.5);
     &:hover {
@@ -89,13 +104,19 @@ body {
     }
 }
 #googlemusic {
+    font-size: 0.64em;
+    border-right: 1px solid black;
     height: 100%;
     color: rgba(255, 255, 255, 0.5);
+    @include breakpoint(sm) {
+        font-size: 1em;
+    }
     &:hover {
         color: rgba(255, 255, 255, 1.0);
     }
 }
 #itunes {
+    border-right: 1px solid black;
     height: 100%;
     color: rgba(255, 255, 255, 0.5);
     &:hover {
@@ -103,8 +124,12 @@ body {
     }
 }
 #cdvinyl {
+    font-size: 0.64em;
     height: 100%;
     color: rgba(255, 255, 255, 0.5);
+    @include breakpoint(sm) {
+        font-size: 1em;
+    }
     &:hover {
         color: rgba(255, 255, 255, 1.0);
     }

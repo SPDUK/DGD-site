@@ -4,7 +4,7 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap';
 class NavigationBar extends Component {
   render() {
     return (
-        <Navbar id="navtop" fixedTop>
+        <Navbar id="navtop" fixedTop inverse>
           <Navbar.Header>
             <Navbar.Brand>
               <a href="#">Dance Gavin Dance</a>

@@ -1,10 +1,15 @@
 body {
-  padding-top: 100px; }
+  padding-top: 100px;
+  background: radial-gradient(circle, #282828, #383838); }
+  @media (min-width: 992px) {
+    body {
+      padding-top: 150px; } }
 
 #home-jumbotron {
   margin-bottom: 0;
   text-align: center;
-  background-color: grey;
+  background-color: #282828;
+  color: white;
   border-radius: 0;
   font-weight: 700;
   font-family: 'Bitter', serif; }
@@ -27,30 +32,39 @@ body {
     margin-bottom: 0; }
 
 .social-links {
-  padding-top: 5px !important;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+  padding-top: 2px !important;
   height: 50px;
   width: 100%;
   text-align: center;
-  background-color: #282836;
+  background-color: #282828;
   cursor: pointer; }
   .social-links i {
     font-size: 2.5rem; }
   .social-links a {
     height: 100%; }
 
+.row {
+  margin: 0px;
+  padding: 0px; }
+
 #twitter {
+  border-right: 1px solid black;
   height: 100%;
   color: rgba(255, 255, 255, 0.5); }
   #twitter:hover {
     color: white; }
 
 #facebook {
+  border-right: 1px solid black;
   height: 100%;
   color: rgba(255, 255, 255, 0.5); }
   #facebook:hover {
     color: white; }
 
 #instagram {
+  border-right: 1px solid black;
   height: 100%;
   color: rgba(255, 255, 255, 0.5); }
   #instagram:hover {
@@ -63,25 +77,36 @@ body {
     color: white; }
 
 #amazon {
+  border-right: 1px solid black;
   height: 100%;
   color: rgba(255, 255, 255, 0.5); }
   #amazon:hover {
     color: white; }
 
 #googlemusic {
+  font-size: 0.64em;
+  border-right: 1px solid black;
   height: 100%;
   color: rgba(255, 255, 255, 0.5); }
+  @media (min-width: 768px) {
+    #googlemusic {
+      font-size: 1em; } }
   #googlemusic:hover {
     color: white; }
 
 #itunes {
+  border-right: 1px solid black;
   height: 100%;
   color: rgba(255, 255, 255, 0.5); }
   #itunes:hover {
     color: white; }
 
 #cdvinyl {
+  font-size: 0.64em;
   height: 100%;
   color: rgba(255, 255, 255, 0.5); }
+  @media (min-width: 768px) {
+    #cdvinyl {
+      font-size: 1em; } }
   #cdvinyl:hover {
     color: white; }

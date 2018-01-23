@@ -61,9 +61,6 @@ class Home extends Component {
             <h1>Dance Gavin Dance </h1>
             <h3>Mothership out Now </h3>
             <p> <i className="fa fa-spotify"></i> Listen Now on Spotify </p>
-              <div className="findus">
-              Also available at ->
-              </div>
             <iframe src="https://open.spotify.com/embed/album/1FSVYIieMIpJCWjucTjrao" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
           </div>
           <div  className="row social-links">

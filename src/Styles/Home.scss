@@ -4,49 +4,108 @@ body {
 }
 
 #home-jumbotron {
-    margin-top: 0px;
-    font-size: 3.7rem;
-    height: 800px;
+    margin-bottom: 0;
+    text-align: center;
     background-color: grey;
     border-radius: 0;
+    font-weight: 700;
+    font-family: 'Bitter', serif;
+
+    h1 {
+        font-size: 3.1rem;
+        font-weight: 700;
+        @include breakpoint(sm) {
+            font-size: 5rem;
+        }
+        @include breakpoint(md) {
+            font-size: 8rem;
+        }
+    }
+    h3 {
+        @include breakpoint(sm) {
+            font-size: 4rem;
+        }
+        @include breakpoint(md) {
+            font-size: 7rem;
+        }     
+    }
+    p {
+        margin-bottom: 0;
+    }
 }
 
-#social-links {
+.social-links {
+    padding-top: 5px !important;
     height: 50px;
-    color: white;
     width: 100%;
     text-align: center;
-    
+    background-color: rgb(40, 40, 54);
+    cursor: pointer;
     i {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
-
     a {
         height: 100%;
-        position: relative;
     }
 }
+
 
 #twitter {
     height: 100%;
-    border: 1px solid grey;
-    background-color: pink;
+    color: rgba(255, 255, 255, 0.5);
+    &:hover {
+        color: rgba(255, 255, 255, 1.0);
+    }
 }
 
 #facebook {
     height: 100%;
-    border: 1px solid grey;
-    background-color: blue;
+    color: rgba(255, 255, 255, 0.5);
+    &:hover {
+        color: rgba(255, 255, 255, 1.0);
+    }
 }
 
 #instagram {
     height: 100%;
-    border: 1px solid grey;
-    background-color: green;
+    color: rgba(255, 255, 255, 0.5);
+    &:hover {
+        color: rgba(255, 255, 255, 1.0);
+    }
 }
 
 #youtube {
     height: 100%;
-    border: 1px solid grey;
-    background-color: red;
+    color: rgba(255, 255, 255, 0.5);
+    &:hover {
+        color: rgba(255, 255, 255, 1.0);
+    }
+}
+#amazon {
+    height: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    &:hover {
+        color: rgba(255, 255, 255, 1.0);
+    }
+}
+#googlemusic {
+    height: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    &:hover {
+        color: rgba(255, 255, 255, 1.0);
+    }
+}
+#itunes {
+    height: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    &:hover {
+        color: rgba(255, 255, 255, 1.0);
+    }
+}
+#cdvinyl {
+    height: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    &:hover {
+        color: rgba(255, 255, 255, 1.0);
+    }
 }

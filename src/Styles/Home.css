@@ -2,39 +2,86 @@ body {
   padding-top: 100px; }
 
 #home-jumbotron {
-  margin-top: 0px;
-  font-size: 3.7rem;
-  height: 800px;
+  margin-bottom: 0;
+  text-align: center;
   background-color: grey;
-  border-radius: 0; }
+  border-radius: 0;
+  font-weight: 700;
+  font-family: 'Bitter', serif; }
+  #home-jumbotron h1 {
+    font-size: 3.1rem;
+    font-weight: 700; }
+    @media (min-width: 768px) {
+      #home-jumbotron h1 {
+        font-size: 5rem; } }
+    @media (min-width: 992px) {
+      #home-jumbotron h1 {
+        font-size: 8rem; } }
+  @media (min-width: 768px) {
+    #home-jumbotron h3 {
+      font-size: 4rem; } }
+  @media (min-width: 992px) {
+    #home-jumbotron h3 {
+      font-size: 7rem; } }
+  #home-jumbotron p {
+    margin-bottom: 0; }
 
-#social-links {
+.social-links {
+  padding-top: 5px !important;
   height: 50px;
-  color: white;
   width: 100%;
-  text-align: center; }
-  #social-links i {
-    font-size: 3rem; }
-  #social-links a {
-    height: 100%;
-    position: relative; }
+  text-align: center;
+  background-color: #282836;
+  cursor: pointer; }
+  .social-links i {
+    font-size: 2.5rem; }
+  .social-links a {
+    height: 100%; }
 
 #twitter {
   height: 100%;
-  border: 1px solid grey;
-  background-color: pink; }
+  color: rgba(255, 255, 255, 0.5); }
+  #twitter:hover {
+    color: white; }
 
 #facebook {
   height: 100%;
-  border: 1px solid grey;
-  background-color: blue; }
+  color: rgba(255, 255, 255, 0.5); }
+  #facebook:hover {
+    color: white; }
 
 #instagram {
   height: 100%;
-  border: 1px solid grey;
-  background-color: green; }
+  color: rgba(255, 255, 255, 0.5); }
+  #instagram:hover {
+    color: white; }
 
 #youtube {
   height: 100%;
-  border: 1px solid grey;
-  background-color: red; }
+  color: rgba(255, 255, 255, 0.5); }
+  #youtube:hover {
+    color: white; }
+
+#amazon {
+  height: 100%;
+  color: rgba(255, 255, 255, 0.5); }
+  #amazon:hover {
+    color: white; }
+
+#googlemusic {
+  height: 100%;
+  color: rgba(255, 255, 255, 0.5); }
+  #googlemusic:hover {
+    color: white; }
+
+#itunes {
+  height: 100%;
+  color: rgba(255, 255, 255, 0.5); }
+  #itunes:hover {
+    color: white; }
+
+#cdvinyl {
+  height: 100%;
+  color: rgba(255, 255, 255, 0.5); }
+  #cdvinyl:hover {
+    color: white; }

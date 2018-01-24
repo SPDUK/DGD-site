@@ -1,4 +1,8 @@
 import React, {Component} from 'react';
+import dgdLogo from '../images/dgd-logo1.png';
+import mothershipOutNow from '../images/mothership-out-now.png';
+
+
 
 class Home extends Component {
 
@@ -58,10 +62,11 @@ class Home extends Component {
             </div>
           </div>
           <div className="jumbotron" id="home-jumbotron">
-            <h1>Dance Gavin Dance </h1>
-            <h3>Mothership out Now </h3>
-            <p> <i className="fa fa-spotify"></i> Listen Now on Spotify </p>
-            <iframe src="https://open.spotify.com/embed/album/1FSVYIieMIpJCWjucTjrao" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+          <img src={dgdLogo}  id="dgdLogo" alt="Dance Gavin Dance logo"/> 
+          <img src={mothershipOutNow}  id="mothershipOutNow" alt="Dance Gavin Dance logo"/>
+          <p className="jumbo-text">Click <span>play</span> to listen on Spotify!</p>
+            <iframe src="https://open.spotify.com/embed/album/1FSVYIieMIpJCWjucTjrao" width="300" height="80" frameBorder="none" allowtransparency="true"></iframe>
+            <p className=" jumbo-text jumbo-text-2">Also available at</p>
           </div>
           <div  className="row social-links">
           <div onClick={this.amazonClick} className="col-xs-3" id="amazon">
@@ -70,7 +75,7 @@ class Home extends Component {
               </div>
               <div onClick={this.googlemusicClick} className="col-xs-3" id="googlemusic">
             <i className="fa fa-google" aria-hidden="true"></i>
-              <p className="social-subtext">Google Music</p>
+              <p className="social-subtext">Google</p>
               </div>
               <div onClick={this.itunesClick} className="col-xs-3" id="itunes">
             <i className="fa fa-apple" aria-hidden="true"></i>

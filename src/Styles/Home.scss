@@ -6,8 +6,10 @@ body {
         padding-top: 150px;
     }
 }
-
+//main jumbotron
 #home-jumbotron {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
     margin-bottom: 0;
     text-align: center;
     background-color: rgb(40, 40, 40);
@@ -16,43 +18,48 @@ body {
     font-weight: 700;
     font-family: 'Bitter', serif;
 
-    h1 {
-        font-size: 3.1rem;
-        font-weight: 700;
-        @include breakpoint(sm) {
-            font-size: 5rem;
-        }
-        @include breakpoint(md) {
-            font-size: 8rem;
-        }
+    #dgdLogo {
+        width: 90%;
     }
-    h3 {
-        @include breakpoint(sm) {
-            font-size: 4rem;
+    #mothershipOutNow {
+        width: 68%;
+    }
+    .jumbo-text {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        &-2 {
+            margin-bottom:-2.5rem;
         }
-        @include breakpoint(md) {
-            font-size: 7rem;
-        }     
-    }
-    p {
-        margin-bottom: 0;
-    }
+        span {
+            color:#1ed760;
+        }
+    }   
 }
 
+//social links 
 .social-links {
+    background-color: $darkGray;
+    font-size: 1.1rem;
+    height: 40px;
+    text-align: center;
     border-top: solid black 2px;
     border-bottom:  solid black 2px;
-    padding-top: 2px !important;
-    height: 50px;
     width: 100%;
-    text-align: center;
-    background-color: rgb(40, 40, 40);
     cursor: pointer;
     i {
-        font-size: 2.5rem;
+        font-size: 1.7rem;
     }
-    a {
-        height: 100%;
+    @include breakpoint(sm) {
+        font-size: 1.2rem;
+        height: 50px;
+        i {
+            font-size: 2.5rem;
+        }
+        a {
+            height: 100%;
+        }
     }
 }
 
@@ -62,75 +69,87 @@ body {
 }
 
 #twitter {
+    border-left: 1px solid $green;
     border-right: 1px solid black;
     height: 100%;
-    color: rgba(255, 255, 255, 0.5);
+    color: $lightGray;
     &:hover {
-        color: rgba(255, 255, 255, 1.0);
+        color: $darkGray;
+        background-color: $green;
+        transition: ease-in 0.3s;
     }
 }
 
 #facebook {
     border-right: 1px solid black;
     height: 100%;
-    color: rgba(255, 255, 255, 0.5);
+    color: $lightGray;
     &:hover {
-        color: rgba(255, 255, 255, 1.0);
+        color: $darkGray;
+        background-color: $green;
+        transition: ease-in 0.3s;
     }
 }
 
 #instagram {
     border-right: 1px solid black;
     height: 100%;
-    color: rgba(255, 255, 255, 0.5);
+    color: $lightGray;
     &:hover {
-        color: rgba(255, 255, 255, 1.0);
+        color:$darkGray;
+        background-color: $green;
+        transition: ease-in 0.3s;
     }
 }
 
 #youtube {
     height: 100%;
-    color: rgba(255, 255, 255, 0.5);
+    color: $lightGray;
+    border-right: 1px solid $green;
     &:hover {
-        color: rgba(255, 255, 255, 1.0);
+        color: $darkGray;
+        background-color: $green;
+        transition: ease-in 0.3s;
     }
 }
 #amazon {
+    border-left: 1px solid $green;
     border-right: 1px solid black;
     height: 100%;
-    color: rgba(255, 255, 255, 0.5);
+    color: $lightGray;
     &:hover {
-        color: rgba(255, 255, 255, 1.0);
+        color: $darkGray;
+        background-color: $green;
+        transition: ease-in 0.3s;
     }
 }
 #googlemusic {
-    font-size: 0.64em;
     border-right: 1px solid black;
     height: 100%;
-    color: rgba(255, 255, 255, 0.5);
-    @include breakpoint(sm) {
-        font-size: 1em;
-    }
+    color: $lightGray;
     &:hover {
-        color: rgba(255, 255, 255, 1.0);
+        color: $darkGray;
+        background-color: $green;
+        transition: ease-in 0.3s;
     }
 }
 #itunes {
     border-right: 1px solid black;
     height: 100%;
-    color: rgba(255, 255, 255, 0.5);
+    color: $lightGray;
     &:hover {
-        color: rgba(255, 255, 255, 1.0);
+        color: $darkGray;
+        background-color: $green;
+        transition: ease-in 0.3s;
     }
 }
 #cdvinyl {
-    font-size: 0.64em;
     height: 100%;
-    color: rgba(255, 255, 255, 0.5);
-    @include breakpoint(sm) {
-        font-size: 1em;
-    }
+    color: $lightGray;
+    border-right: 1px solid $green;
     &:hover {
-        color: rgba(255, 255, 255, 1.0);
+        color: $darkGray;
+        background-color: $green;
+        transition: ease-in 0.3s;
     }
 }

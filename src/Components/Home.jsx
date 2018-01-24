@@ -34,6 +34,9 @@ class Home extends Component {
   cdvinylClick = () => {
     window.open('http://merchnow.com/catalogs/dance-gavin-dance/music');
   }
+  spotifyClick = () => {
+    window.open ('https://open.spotify.com/album/1FSVYIieMIpJCWjucTjrao');
+  }
 
 
 
@@ -64,7 +67,7 @@ class Home extends Component {
           <div className="jumbotron" id="home-jumbotron">
           <img src={dgdLogo}  id="dgdLogo" alt="Dance Gavin Dance logo"/> 
           <img src={mothershipOutNow}  id="mothershipOutNow" alt="Dance Gavin Dance logo"/>
-          <p className="jumbo-text">Click <span>play</span> to listen on Spotify!</p>
+          <p className="jumbo-text">Click play to listen on Spotify!</p>
             <iframe src="https://open.spotify.com/embed/album/1FSVYIieMIpJCWjucTjrao" width="300" height="80" frameBorder="none" allowtransparency="true"></iframe>
             <p className=" jumbo-text jumbo-text-2">Also available at</p>
           </div>

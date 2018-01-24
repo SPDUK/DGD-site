@@ -1,2 +1,29 @@
 .merch-banner {
-  color: red; }
+  background-color: rgba(26, 26, 26, 0.5);
+  height: 100px;
+  font-family: 'Signika Negative', sans-serif;
+  border: 1px solid black; }
+  .merch-banner a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1a1a1a;
+    border-radius: 0;
+    margin-top: 25px;
+    height: 50px;
+    border-left: 2px solid #1ed760;
+    border-right: 2px solid #1ed760;
+    border-top: 1px solid #1ed760;
+    border-bottom: 1px solid #1ed760;
+    color: white;
+    font-size: 1.3em;
+    transition: ease-in 0.3s; }
+    .merch-banner a:hover {
+      background-color: #1ed760;
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      color: #1a1a1a; }
+    .merch-banner a p {
+      margin-top: 5px; }

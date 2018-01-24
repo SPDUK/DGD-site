@@ -16,6 +16,7 @@ class App extends Component {
       <div className="App">
       <NavigationBar />
       <Home />
+      <MerchBanner />
       </div>
     );
   }

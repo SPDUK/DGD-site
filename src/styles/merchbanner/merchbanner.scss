@@ -1,3 +1,36 @@
+@import '.././variables.scss';
+
+
+
 .merch-banner {
- color:red;
+    background-color: rgba($darkGray, 0.5);
+    height: 100px;
+    font-family: 'Signika Negative', sans-serif;
+    border: 1px solid black;
+    a {
+        @include absolutecenter(x);
+        background-color: $darkGray;
+        border-radius: 0;
+        margin-top: 25px;
+        height: 50px;
+        border-left: 2px solid $green;
+        border-right: 2px solid $green;
+        border-top: 1px solid $green;
+        border-bottom: 1px solid $green;
+        color:white;
+        font-size: 1.3em;
+        transition: ease-in 0.3s;
+        &:hover {
+            background-color: $green;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            color: $darkGray;
+        }
+        p {
+            margin-top: 5px;
+            
+        }
+    }
 }

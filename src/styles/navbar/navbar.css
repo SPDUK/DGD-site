@@ -1,0 +1,54 @@
+#navtop {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 400;
+  background-color: #1a1a1a; }
+  #navtop img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 2px solid #f8d448;
+    border-right: 2px solid #f8d448; }
+  #navtop #navlink1 {
+    color: #f8d448; }
+    @media (max-width: 767px) {
+      #navtop #navlink1 {
+        font-size: 1.8em;
+        text-align: center;
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%); } }
+    #navtop #navlink1:hover {
+      color: #fcebaa; }
+  #navtop #navlink2 {
+    color: #f8d448; }
+    @media (max-width: 767px) {
+      #navtop #navlink2 {
+        font-size: 1.8em;
+        text-align: center;
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%); } }
+    #navtop #navlink2:hover {
+      color: #fcebaa; }
+  #navtop #navlink3 {
+    color: #f8d448; }
+    @media (max-width: 767px) {
+      #navtop #navlink3 {
+        text-align: center;
+        font-size: 1.8em;
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%); } }
+    #navtop #navlink3:hover {
+      color: #fcebaa; }
+  #navtop #navlink4 {
+    color: #f8d448; }
+    @media (max-width: 767px) {
+      #navtop #navlink4 {
+        font-size: 1.8em;
+        text-align: center;
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%); } }
+    #navtop #navlink4:hover {
+      color: #fcebaa; }

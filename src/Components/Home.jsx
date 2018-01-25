@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import dgdLogo from '../images/dgd-logo1.png';
 import mothershipOutNow from '../images/mothership-out-now.png';
 
-
-
 class Home extends Component {
 
   twitterClick = () => {

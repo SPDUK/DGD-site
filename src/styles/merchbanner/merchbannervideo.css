@@ -1,0 +1,28 @@
+.video-banner {
+  background-color: rgba(26, 26, 26, 0.5);
+  height: 100px;
+  border: 1px solid black; }
+  .video-banner a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1a1a1a;
+    border-radius: 0;
+    margin-top: 25px;
+    height: 50px;
+    border-left: 2px solid #f8d448;
+    border-right: 2px solid #f8d448;
+    border-top: 1px solid #f8d448;
+    border-bottom: 1px solid #f8d448;
+    color: white;
+    font-size: 1.3em;
+    transition: ease-in 0.3s; }
+    .video-banner a:hover {
+      background-color: #f8d448;
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      color: #1a1a1a; }
+    .video-banner a p {
+      margin-top: 5px; }

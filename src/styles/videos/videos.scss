@@ -1,1 +1,28 @@
 @import '.././variables.scss';
+.videos {
+    .container-fluid {
+        background-color: rgba(26, 26, 26, 0.5);
+        height: 600px;
+    }
+    .videotitle {
+        border-left: 1px solid $red;
+        border-right: 1px solid $red;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        background-color: $darkGray;
+        p {
+            height: 100%;
+            border-left: 1px solid $green;
+            border-right: 1px solid $green;
+            border-bottom: 2px solid black;
+            height: 100%;
+            color: $lightGray;
+            &:hover {
+                color: $darkGray;
+                background-color: $green;
+                transition: ease-in 0.3s;
+            }
+        }
+    }
+}

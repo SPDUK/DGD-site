@@ -40,7 +40,7 @@ scrollTopFunction() {
               </Nav>
               <Nav pullRight>
               <NavItem id="navlink3" eventKey={3} href="https://www.google.co.uk">
-               Tour
+               Tour Info
               </NavItem>
               <NavItem id="navlink4" eventKey={4} href="https://www.google.co.uk">
                About

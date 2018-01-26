@@ -66,7 +66,7 @@ class Home extends Component {
           <img src={dgdLogo}  id="dgdLogo" alt="Dance Gavin Dance logo"/> 
           <img src={mothershipOutNow}  id="mothershipOutNow" alt="Dance Gavin Dance logo"/>
           <p className="jumbo-text"><i className="fa fa-arrow-down"></i> &nbsp; &nbsp; Click play to listen on Spotify!</p>
-            <iframe src="https://open.spotify.com/embed/album/1FSVYIieMIpJCWjucTjrao" width="300" height="80" frameBorder="none" allowtransparency="true"></iframe>
+            <iframe id="spotifyembed"src="https://open.spotify.com/embed/album/1FSVYIieMIpJCWjucTjrao" width="300" height="80" frameBorder="none" allowtransparency="true"></iframe>
             <p className=" jumbo-text jumbo-text-2">If you don't use spotify we are also available at..</p> 
           </div>
           <div  className="row social-links">

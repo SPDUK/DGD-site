@@ -1,0 +1,50 @@
+.tour-jumbo {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #282828;
+  color: white;
+  border-radius: 0;
+  font-weight: 700;
+  height: 315px; }
+  @media (min-width: 992px) {
+    .tour-jumbo {
+      height: 370px; } }
+  @media (min-width: 1200px) {
+    .tour-jumbo {
+      height: 400px; } }
+
+#tourtitle {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-color: #1a1a1a; }
+  #tourtitle p {
+    height: 100%;
+    border-left: 1px solid #1ed760;
+    border-right: 1px solid #1ed760;
+    border-bottom: 2px solid black;
+    height: 100%;
+    color: #7e8084; }
+    #tourtitle p:hover {
+      color: #1a1a1a;
+      background-color: #1ed760;
+      transition: ease-in 0.3s; }
+
+#tourshowmore {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-color: #1a1a1a; }
+  #tourshowmore p {
+    height: 100%;
+    border-left: 1px solid #1ed760;
+    border-right: 1px solid #1ed760;
+    border-bottom: 2px solid black;
+    height: 100%;
+    color: #7e8084; }
+    #tourshowmore p:hover {
+      color: #1a1a1a;
+      background-color: #1ed760;
+      transition: ease-in 0.3s; }

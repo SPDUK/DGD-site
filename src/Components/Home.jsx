@@ -44,7 +44,7 @@ class Home extends Component {
     return (
       <div className="Home">
         <div className="container">
-          <div className="row social-links">
+          <div className="row jumbo-links">
             <div onClick={this.twitterClick} className="col-xs-3" id="twitter">
               <i className="fa fa-twitter" aria-hidden="true"></i>
               <p className="social-subtext">Twitter </p>
@@ -69,7 +69,7 @@ class Home extends Component {
             <iframe id="spotifyembed"src="https://open.spotify.com/embed/album/1FSVYIieMIpJCWjucTjrao" width="300" height="80" frameBorder="none" allowtransparency="true"></iframe>
             <p className=" jumbo-text jumbo-text-2">If you don't use spotify we are also available at..</p> 
           </div>
-          <div  className="row social-links">
+          <div  className="row jumbo-links">
           <div onClick={this.amazonClick} className="col-xs-3" id="amazon">
             <i className="fa fa-amazon" aria-hidden="true"></i>
               <p className="social-subtext">Amazon</p>

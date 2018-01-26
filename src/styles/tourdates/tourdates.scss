@@ -1,0 +1,59 @@
+@import '.././variables.scss';
+
+
+.tour-jumbo {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: rgb(40, 40, 40);
+    color:white;
+    border-radius: 0;
+    font-weight: 700;
+    height: 315px;
+    @include breakpoint(md) {
+        height: 370px;
+    }
+    @include breakpoint (lg){
+        height: 400px;
+    }
+}
+
+#tourtitle {
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    background-color: $darkGray;
+    p {
+        height: 100%;
+        border-left: 1px solid $green;
+        border-right: 1px solid $green;
+        border-bottom: 2px solid black;
+        height: 100%;
+        color: $lightGray;
+        &:hover {
+            color: $darkGray;
+            background-color: $green;
+            transition: ease-in 0.3s;
+        }
+    }   
+}
+#tourshowmore {
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    background-color: $darkGray;
+    p {
+        height: 100%;
+        border-left: 1px solid $green;
+        border-right: 1px solid $green;
+        border-bottom: 2px solid black;
+        height: 100%;
+        color: $lightGray;
+        &:hover {
+            color: $darkGray;
+            background-color: $green;
+            transition: ease-in 0.3s;
+        }
+    }   
+}

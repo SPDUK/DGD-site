@@ -18,7 +18,14 @@ body {
   background-color: #282828;
   color: white;
   border-radius: 0;
-  font-weight: 700; }
+  font-weight: 700;
+  height: 315px; }
+  @media (min-width: 992px) {
+    #home-jumbotron {
+      height: 370px; } }
+  @media (min-width: 1200px) {
+    #home-jumbotron {
+      height: 400px; } }
   #home-jumbotron #dgdLogo {
     width: 90%; }
   #home-jumbotron #mothershipOutNow {
@@ -31,7 +38,7 @@ body {
     #home-jumbotron .jumbo-text-2 {
       margin-bottom: -2.5rem; }
 
-.social-links {
+.jumbo-links {
   background-color: #1a1a1a;
   font-size: 1.1rem;
   height: 40px;
@@ -41,16 +48,16 @@ body {
   border-bottom: solid black 2px;
   width: 100%;
   cursor: pointer; }
-  .social-links i {
+  .jumbo-links i {
     margin-top: 3px;
     font-size: 1.7rem; }
   @media (min-width: 768px) {
-    .social-links {
+    .jumbo-links {
       font-size: 1.2rem;
       height: 50px; }
-      .social-links i {
+      .jumbo-links i {
         font-size: 2.5rem; }
-      .social-links a {
+      .jumbo-links a {
         height: 100%; } }
 
 .row {

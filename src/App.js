@@ -4,11 +4,13 @@ import React, { Component } from 'react';
 import Home from './components/home';
 import NavigationBar from './components/navbar';
 import MerchBanner from './components/merchbanner';
+import TourDates from './components/tourdates';
 //CSS
 import './styles/home.css';
 import './styles/variables.css';
 import './styles/navbar/navbar.css';
 import './styles/merchbanner/merchbanner.css';
+import './styles/tourdates/tourdates.css';
 
 class App extends Component {
   render() {
@@ -17,6 +19,7 @@ class App extends Component {
       <NavigationBar />
       <Home />
       <MerchBanner />
+      <TourDates />
       </div>
     );
   }

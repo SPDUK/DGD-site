@@ -21,6 +21,13 @@ body {
     color:white;
     border-radius: 0;
     font-weight: 700;
+    height: 315px;
+    @include breakpoint(md) {
+        height: 370px;
+    }
+    @include breakpoint (lg){
+        height: 400px;
+    }
 
     #dgdLogo {
         width: 90%;
@@ -39,8 +46,8 @@ body {
     }   
 }
 
-//social links 
-.social-links {
+//jumbo links 
+.jumbo-links {
     background-color: $darkGray;
     font-size: 1.1rem;
     height: 40px;

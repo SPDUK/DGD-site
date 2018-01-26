@@ -13,6 +13,7 @@ class TourDates extends Component {
                     </div>
                 </div>
                 <div className="jumbotron tour-jumbo">
+                They would not give me tour/band API :(
                 </div>
                 <div className="row jumbo-links">
                     <div id="tourshowmore" className="col-xs-12">

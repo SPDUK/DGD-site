@@ -1,3 +1,6 @@
+.videos .col-md-6 {
+  padding: 0; }
+
 .videos .container-fluid {
   background-color: rgba(26, 26, 26, 0.5);
   height: 600px; }
@@ -6,16 +9,13 @@
   border-left: 1px solid #ed8270;
   border-right: 1px solid #ed8270;
   height: 50px;
-  padding: 0;
-  margin: 0;
   background-color: #1a1a1a; }
   .videos .videotitle p {
-    height: 100%;
-    border-left: 1px solid #1ed760;
-    border-right: 1px solid #1ed760;
-    border-bottom: 2px solid black;
-    height: 100%;
-    color: #7e8084; }
+    font-size: 2.75em;
+    color: #ed8270;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
     .videos .videotitle p:hover {
       color: #1a1a1a;
       background-color: #1ed760;

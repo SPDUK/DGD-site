@@ -16,6 +16,7 @@
       height: 400px; } }
 
 #tourtitle {
+  font-size: 2.75em;
   height: 50px;
   padding: 0;
   margin: 0;
@@ -26,15 +27,11 @@
     border-right: 1px solid #1ed760;
     border-bottom: 2px solid black;
     height: 100%;
-    color: #7e8084; }
-    #tourtitle p:hover {
-      color: #1a1a1a;
-      background-color: #1ed760;
-      transition: ease-in 0.3s; }
+    color: #f8d448; }
 
 #tourshowmore {
   height: 50px;
-  font-size: 2em;
+  font-size: 2.75em;
   padding: 0;
   margin: 0;
   background-color: #1a1a1a; }
@@ -44,7 +41,7 @@
     border-right: 1px solid #1ed760;
     border-bottom: 2px solid black;
     height: 100%;
-    color: #7e8084; }
+    color: #f8d448; }
     #tourshowmore p:hover {
       color: #1a1a1a;
       background-color: #1ed760;

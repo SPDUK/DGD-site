@@ -7,12 +7,12 @@ class Videos extends Component {
 
       <div className="videos">
         <div className="container">
-          <div className="row videotitle"></div>
+        <div className="row videotitle">
+        <p>VIDEOS</p>
         </div>
-        <div className="container-fluid">
           <div className="row">
-            <div className="col-xs-6">
-              <iframe
+            <div className="col-xs-12 col-md-6">
+              <iframe className="youtubevideo"
                 width="100%"
                 height="500px"
                 src="https://www.youtube.com/embed/Z-aQrBZ4Duw"

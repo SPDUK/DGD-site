@@ -45,19 +45,19 @@ class Home extends Component {
       <div className="Home">
         <div className="container">
           <div className="row jumbo-links">
-            <div onClick={this.twitterClick} className="col-xs-3" id="twitter">
+            <div onClick={this.twitterClick} className="col-xs-3 links" id="twitter">
               <i className="fa fa-twitter" aria-hidden="true"></i>
               <p className="social-subtext">Twitter </p>
             </div>
-            <div onClick={this.facebookClick} className="col-xs-3" id="facebook">
+            <div onClick={this.facebookClick} className="col-xs-3 links" id="facebook">
               <i className="fa fa-facebook" aria-hidden="true"></i>
               <p className="social-subtext">Facebook</p>
             </div>
-            <div onClick={this.instaClick} className="col-xs-3" id="instagram">
+            <div onClick={this.instaClick} className="col-xs-3 links"  id="instagram">
               <i className="fa fa-instagram" aria-hidden="true"></i>
               <p className="social-subtext">Instagram</p>
             </div>
-            <div onClick={this.youtubeClick} className="col-xs-3" id="youtube">
+            <div onClick={this.youtubeClick} className="col-xs-3 links" id="youtube">
               <i className="fa fa-youtube" aria-hidden="true"></i>
                 <p className="social-subtext">Youtube</p>
             </div>
@@ -70,19 +70,19 @@ class Home extends Component {
             <p className=" jumbo-text jumbo-text-2">If you don't use spotify we are also available at..</p> 
           </div>
           <div  className="row jumbo-links">
-          <div onClick={this.amazonClick} className="col-xs-3" id="amazon">
+          <div onClick={this.amazonClick} className="col-xs-3 links" id="amazon">
             <i className="fa fa-amazon" aria-hidden="true"></i>
               <p className="social-subtext">Amazon</p>
               </div>
-              <div onClick={this.googlemusicClick} className="col-xs-3" id="googlemusic">
+              <div onClick={this.googlemusicClick} className="col-xs-3 links" id="googlemusic">
             <i className="fa fa-google" aria-hidden="true"></i>
               <p className="social-subtext">Google</p>
               </div>
-              <div onClick={this.itunesClick} className="col-xs-3" id="itunes">
+              <div onClick={this.itunesClick} className="col-xs-3 links" id="itunes">
             <i className="fa fa-apple" aria-hidden="true"></i>
               <p className="social-subtext">iTunes</p>
               </div>
-              <div onClick={this.cdvinylClick} className="col-xs-3" id="cdvinyl">
+              <div onClick={this.cdvinylClick} className="col-xs-3 links" id="cdvinyl">
             <i className="fa fa-music" aria-hidden="true"></i>
               <p className="social-subtext">CD & Vinyl</p>
               </div>

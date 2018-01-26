@@ -20,6 +20,7 @@
 }
 
 #tourtitle {
+    font-size: 2.75em;
     height: 50px;
     padding: 0;
     margin: 0;
@@ -30,17 +31,12 @@
         border-right: 1px solid $green;
         border-bottom: 2px solid black;
         height: 100%;
-        color: $lightGray;
-        &:hover {
-            color: $darkGray;
-            background-color: $green;
-            transition: ease-in 0.3s;
-        }
+        color: $yellow;
     }   
 }
 #tourshowmore {
     height: 50px;
-    font-size: 2em;
+    font-size: 2.75em;
     padding: 0;
     margin: 0;
     background-color: $darkGray;
@@ -50,7 +46,7 @@
         border-right: 1px solid $green;
         border-bottom: 2px solid black;
         height: 100%;
-        color: $lightGray;
+        color: $yellow;
         &:hover {
             color: $darkGray;
             background-color: $green;

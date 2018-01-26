@@ -1,5 +1,8 @@
 @import '.././variables.scss';
 .videos {
+    .col-md-6 {
+        padding: 0;
+    }
     .container-fluid {
         background-color: rgba(26, 26, 26, 0.5);
         height: 600px;
@@ -8,16 +11,11 @@
         border-left: 1px solid $red;
         border-right: 1px solid $red;
         height: 50px;
-        padding: 0;
-        margin: 0;
         background-color: $darkGray;
         p {
-            height: 100%;
-            border-left: 1px solid $green;
-            border-right: 1px solid $green;
-            border-bottom: 2px solid black;
-            height: 100%;
-            color: $lightGray;
+            font-size: 2.75em;
+            color:$red;
+            @include absolutecenter(x);
             &:hover {
                 color: $darkGray;
                 background-color: $green;

@@ -56,7 +56,6 @@ body {
     border-top: solid black 2px;
     border-bottom:  solid black 2px;
     width: 100%;
-    cursor: pointer;
     i {
         margin-top: 3px;
         font-size: 1.7rem;
@@ -77,7 +76,9 @@ body {
     margin: 0px;
     padding: 0px;
 }
-
+.links {
+    cursor: pointer;
+}
 #twitter {
     border-left: 1px solid $green;
     border-right: 1px solid black;

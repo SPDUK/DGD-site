@@ -1,9 +1,5 @@
 @import '.././variables.scss';
-
-
 #navtop {
-    font-family: 'Signika Negative', sans-serif;
-    font-weight: 400;
     background-color: $darkGray;
     img {
         @include absolutecenter(x);
@@ -11,11 +7,14 @@
         border-right: 2px solid $yellow;
         cursor: pointer;
     }
+
     #navlink1 {
         color: $yellow;
-        font-size: 1.8em;
+        font-size: 1.5em;
+        border-bottom: 1px solid $yellow;
         @include breakpoint(xs) {
             text-align: center;
+            border-bottom: none;
             width: 50%;
             left: 50%;
             transform: translateX(-50%);
@@ -25,29 +24,27 @@
         }
         @include breakpoint(md) {
             margin-right: 5em;
-        }
-        &:hover {
-            color: lighten($yellow, 20%);
         }
     }
     #navlink2 {
         color: $yellow;
-        font-size: 1.8em;
+        font-size: 1.5em;
+        border-bottom: 1px solid $yellow;
         @include breakpoint(xs) {
             text-align: center;
+            border-bottom: none;
             width: 50%;
             left: 50%;
             transform: translateX(-50%);
         }
-        &:hover {
-            color: lighten($yellow, 20%);
-        }
     }
     #navlink3 {
         color: $yellow;
-        font-size: 1.8em;
+        font-size: 1.5em;
+        border-bottom: 1px solid $yellow;
         @include breakpoint(xs) {
             text-align: center;
+            border-bottom: none;
             width: 50%;
             left: 50%;
             transform: translateX(-50%);
@@ -58,21 +55,17 @@
         @include breakpoint(md) {
             margin-right: 5em;
         }
-        &:hover {
-            color: lighten($yellow, 20%);
-        }
     }
     #navlink4 {
         color: $yellow;
-        font-size: 1.8em;
+        font-size: 1.5em;
+        border-bottom: 1px solid $yellow;
         @include breakpoint(xs) {
             text-align: center;
+            border-bottom: none;
             width: 50%;
             left: 50%;
             transform: translateX(-50%);
-        }
-        &:hover {
-            color: lighten($yellow, 20%);
         }
     }
 }

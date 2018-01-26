@@ -1,6 +1,4 @@
 #navtop {
-  font-family: 'Signika Negative', sans-serif;
-  font-weight: 400;
   background-color: #1a1a1a; }
   #navtop img {
     position: absolute;
@@ -11,10 +9,12 @@
     cursor: pointer; }
   #navtop #navlink1 {
     color: #f8d448;
-    font-size: 1.8em; }
+    font-size: 1.5em;
+    border-bottom: 1px solid #f8d448; }
     @media (max-width: 767px) {
       #navtop #navlink1 {
         text-align: center;
+        border-bottom: none;
         width: 50%;
         left: 50%;
         transform: translateX(-50%); } }
@@ -24,25 +24,25 @@
     @media (min-width: 992px) {
       #navtop #navlink1 {
         margin-right: 5em; } }
-    #navtop #navlink1:hover {
-      color: #fcebaa; }
   #navtop #navlink2 {
     color: #f8d448;
-    font-size: 1.8em; }
+    font-size: 1.5em;
+    border-bottom: 1px solid #f8d448; }
     @media (max-width: 767px) {
       #navtop #navlink2 {
         text-align: center;
+        border-bottom: none;
         width: 50%;
         left: 50%;
         transform: translateX(-50%); } }
-    #navtop #navlink2:hover {
-      color: #fcebaa; }
   #navtop #navlink3 {
     color: #f8d448;
-    font-size: 1.8em; }
+    font-size: 1.5em;
+    border-bottom: 1px solid #f8d448; }
     @media (max-width: 767px) {
       #navtop #navlink3 {
         text-align: center;
+        border-bottom: none;
         width: 50%;
         left: 50%;
         transform: translateX(-50%); } }
@@ -52,16 +52,14 @@
     @media (min-width: 992px) {
       #navtop #navlink3 {
         margin-right: 5em; } }
-    #navtop #navlink3:hover {
-      color: #fcebaa; }
   #navtop #navlink4 {
     color: #f8d448;
-    font-size: 1.8em; }
+    font-size: 1.5em;
+    border-bottom: 1px solid #f8d448; }
     @media (max-width: 767px) {
       #navtop #navlink4 {
         text-align: center;
+        border-bottom: none;
         width: 50%;
         left: 50%;
         transform: translateX(-50%); } }
-    #navtop #navlink4:hover {
-      color: #fcebaa; }

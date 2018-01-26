@@ -31,18 +31,18 @@ scrollTopFunction() {
             </Navbar.Header>
             <Navbar.Collapse>
             <Nav>
-              <NavItem id="navlink1" eventKey={1} href="https://www.google.co.uk">
-               Videos
+              <NavItem className="navlinks" id="navlink1" eventKey={1} href="https://www.google.co.uk">
+                Videos
               </NavItem>
-              <NavItem id="navlink2" eventKey={2} href="https://www.google.co.uk">
+              <NavItem className="navlinks" id="navlink2" eventKey={2} href="https://www.google.co.uk">
                Pictures
               </NavItem>
               </Nav>
               <Nav pullRight>
-              <NavItem id="navlink3" eventKey={3} href="https://www.google.co.uk">
+              <NavItem className="navlinks" id="navlink3" eventKey={3} href="https://www.google.co.uk">
                Tour Info
               </NavItem>
-              <NavItem id="navlink4" eventKey={4} href="https://www.google.co.uk">
+              <NavItem className="navlinks" id="navlink4" eventKey={4} href="https://www.google.co.uk">
                About
               </NavItem>
             </Nav>

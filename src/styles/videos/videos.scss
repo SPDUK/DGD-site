@@ -2,11 +2,9 @@
 .videos {
     .col-md-6 {
         padding: 0;
+        margin-bottom: -5px;
     }
-    .container-fluid {
-        background-color: rgba(26, 26, 26, 0.5);
-        height: 600px;
-    }
+ 
     .videotitle {
         border-left: 1px solid $red;
         border-right: 1px solid $red;
@@ -16,11 +14,28 @@
             font-size: 2.75em;
             color:$red;
             @include absolutecenter(x);
-            &:hover {
-                color: $darkGray;
-                background-color: $green;
-                transition: ease-in 0.3s;
             }
         }
     }
+
+.youtubevideo {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
+.videomore {
+    width: 100%;
+    border-left: 1px solid $red;
+    border-right: 1px solid $red;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 50px;
+    background-color: $darkGray;
+    color: $red;
+    font-size: 2.75em;
+    text-align: center;
+    &:hover {
+        background-color: $red;
+        transition: ease-in 0.3s;
+        color: $darkGray;
+    }
+    }

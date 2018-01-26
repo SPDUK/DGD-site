@@ -6,7 +6,7 @@ class MerchBannerVideo extends Component {
         <div>
             <div className="video-banner container-fluid">
                 <a href="https://merchnow.com/catalogs/dance-gavin-dance" className="btn btn-default">
-                    <p> HEY! HEY!</p>
+                    <p>SOMETHING HERE</p>
                 </a>
 
             </div>

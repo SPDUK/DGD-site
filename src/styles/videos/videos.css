@@ -1,9 +1,6 @@
 .videos .col-md-6 {
-  padding: 0; }
-
-.videos .container-fluid {
-  background-color: rgba(26, 26, 26, 0.5);
-  height: 600px; }
+  padding: 0;
+  margin-bottom: -5px; }
 
 .videos .videotitle {
   border-left: 1px solid #ed8270;
@@ -16,7 +13,23 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%); }
-    .videos .videotitle p:hover {
-      color: #1a1a1a;
-      background-color: #1ed760;
-      transition: ease-in 0.3s; }
+
+.youtubevideo {
+  border-left: 2px solid black;
+  border-right: 2px solid black; }
+
+.videomore {
+  width: 100%;
+  border-left: 1px solid #ed8270;
+  border-right: 1px solid #ed8270;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  height: 50px;
+  background-color: #1a1a1a;
+  color: #ed8270;
+  font-size: 2.75em;
+  text-align: center; }
+  .videomore:hover {
+    background-color: #ed8270;
+    transition: ease-in 0.3s;
+    color: #1a1a1a; }

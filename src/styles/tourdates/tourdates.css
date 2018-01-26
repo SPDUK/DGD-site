@@ -23,10 +23,9 @@
   background-color: #1a1a1a; }
   #tourtitle p {
     height: 100%;
-    border-left: 1px solid #1ed760;
-    border-right: 1px solid #1ed760;
+    border-left: 1px solid #f8d448;
+    border-right: 1px solid #f8d448;
     border-bottom: 2px solid black;
-    height: 100%;
     color: #f8d448; }
 
 #tourshowmore {
@@ -37,12 +36,11 @@
   background-color: #1a1a1a; }
   #tourshowmore p {
     height: 100%;
-    border-left: 1px solid #1ed760;
-    border-right: 1px solid #1ed760;
+    border-left: 1px solid #f8d448;
+    border-right: 1px solid #f8d448;
     border-bottom: 2px solid black;
-    height: 100%;
     color: #f8d448; }
     #tourshowmore p:hover {
       color: #1a1a1a;
-      background-color: #1ed760;
+      background-color: #f8d448;
       transition: ease-in 0.3s; }

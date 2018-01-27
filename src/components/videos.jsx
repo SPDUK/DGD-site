@@ -19,9 +19,9 @@ class Videos extends Component {
                 width="100%"
                 height="500px"
                 src="https://www.youtube.com/embed/Z-aQrBZ4Duw"
-                frameborder="0"
+                frameBorder="0"
                 allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
+                allowFullScreen></iframe>
             </div>
             <div className=" col-xs-12 col-md-6">
               <iframe
@@ -29,9 +29,9 @@ class Videos extends Component {
                 width="100%"
                 height="500px"
                 src="https://www.youtube.com/embed/7-9_8QFxjwI"
-                frameborder="0"
+                frameBorder="0"
                 allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
+                allowFullScreen></iframe>
             </div>
             <div className="row">
           </div>

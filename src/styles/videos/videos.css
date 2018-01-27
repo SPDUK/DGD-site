@@ -33,3 +33,7 @@
     background-color: #ed8270;
     transition: ease-in 0.3s;
     color: #1a1a1a; }
+
+.tourdates {
+  border: 1px solid white;
+  height: 40px; }

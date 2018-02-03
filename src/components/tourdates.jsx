@@ -1,21 +1,32 @@
 import React, {Component} from 'react';
-import Request from 'superagent';
+import TourApi from './api.jsx';
 
 class TourDates extends Component {
     constructor(props) {
         super(props)
         this.state = {}
-
-
-        var api = {
-            getTourDates() {
-                var url = 'https://rest.bandsintown.com/artists/Dance%20Gavin%20Dance/events?app_id=dgdband&date=2018-01-01%2C2018-03-03'
-                return fetch(url).then((res) => res.json())
-            }
-        }
     }
 
-    render() {
+
+componentDidMount(){
+        this.fetchData();
+}
+fetchData() {
+    fetch('https://rest.bandsintown.com/artists/Dance%20Gavin%20Dance/events?app_id=dgdapp&date=2018-02-03%2C2019-01-01')
+    .then(response => response.json())
+    .then(response => {
+        this.setState({
+        datetime: response[0].datetime,
+        venuename: response[0].venue.name,
+        venuecity: response[0].venue.city,
+        venuecountry: response[0].venue.country,
+        url: response[0].url
+
+        })
+        console.log(response[0].venue.city)
+    })
+}
+    render(props) {
         return (
             <div className="container">
                 <div className="row jumbo-links">
@@ -27,60 +38,38 @@ class TourDates extends Component {
                 </div>
                 <div className="jumbotron tour-jumbo">
                     <div className="row">
-                    <div className="col-xs-4 tourdates">
-                    </div>
-                    <div className="col-xs-4 tourdates">
-                    </div>
-                    <div className="col-xs-4 tourdates">
-                    </div>                   
-                    </div>
-                    <div className="row">
-                    <div className="col-xs-4 tourdates">
-                    </div>
-                    <div className="col-xs-4 tourdates">
-                    </div>
-                    <div className="col-xs-4 tourdates">
-                    </div>                   
+                        <div className="col-xs-4 tourdates">
+                        {this.state.datetime}
+                        </div>
+                        <div className="col-xs-4 tourdates">
+                        {this.state.venuename} 
+                        {this.state.venuecity}
+                        {this.state.venuecountry}
+                        </div>
+
+                        <div className="col-xs-4 tourdates">
+                        <a href={this.state.url}>Buy Tickets</a>
+                        </div>
                     </div>
                     <div className="row">
-                    <div className="col-xs-4 tourdates">
-                    </div>
-                    <div className="col-xs-4 tourdates">
-                    </div>
-                    <div className="col-xs-4 tourdates">
-                    </div>                   
+                        <div className="col-xs-4 tourdates"></div>
+                        <div className="col-xs-4 tourdates"></div>
+                        <div className="col-xs-4 tourdates"></div>
                     </div>
                     <div className="row">
-                    <div className="col-xs-4 tourdates">
-                    </div>
-                    <div className="col-xs-4 tourdates">
-                    </div>
-                    <div className="col-xs-4 tourdates">
-                    </div>                   
+                        <div className="col-xs-4 tourdates"></div>
+                        <div className="col-xs-4 tourdates"></div>
+                        <div className="col-xs-4 tourdates"></div>
                     </div>
                     <div className="row">
-                    <div className="col-xs-4 tourdates">
-                    </div>
-                    <div className="col-xs-4 tourdates">
-                    </div>
-                    <div className="col-xs-4 tourdates">
-                    </div>                   
+                        <div className="col-xs-4 tourdates"></div>
+                        <div className="col-xs-4 tourdates"></div>
+                        <div className="col-xs-4 tourdates"></div>
                     </div>
                     <div className="row">
-                    <div className="col-xs-4 tourdates">
-                    </div>
-                    <div className="col-xs-4 tourdates">
-                    </div>
-                    <div className="col-xs-4 tourdates">
-                    </div>                   
-                    </div>
-                    <div className="row">
-                    <div className="col-xs-4 tourdates">
-                    </div>
-                    <div className="col-xs-4 tourdates">
-                    </div>
-                    <div className="col-xs-4 tourdates">
-                    </div>                   
+                        <div className="col-xs-4 tourdates"></div>
+                        <div className="col-xs-4 tourdates"></div>
+                        <div className="col-xs-4 tourdates"></div>
                     </div>
                 </div>
                 <div className="row jumbo-links">

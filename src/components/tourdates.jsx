@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import ApiDates from './api.jsx'
 
 class TourDates extends Component {
     constructor(props) {
@@ -60,6 +59,7 @@ class TourDates extends Component {
                         </div>
                     </div>
                     <div className="jumbotron tour-jumbo">
+                    <div className="alltours">
                         <div className="row">
                             <div className="col-xs-4 tourdates">
                             {this.state.datetime1}
@@ -115,6 +115,7 @@ class TourDates extends Component {
                                 <a href={this.state.id5}>Buy Tickets</a>
                             </div>
                         </div>
+                    </div>
                     </div>
                     <div className="row jumbo-links">
                         <div id="tourshowmore" className="col-xs-12">

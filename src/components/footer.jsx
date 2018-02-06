@@ -9,8 +9,13 @@ class Footer extends Component {
 
       <div className="Footer">
             <div>
-                lol
-                </div>
+                   <div className="row"></div>
+                   <div className="col-xs-4 footergrid">
+                   <a href="https://github.com/SPDUK">Website designed by SPDUK <i className="fa fa-github"></i></a>
+                   </div>
+                   <div className="col-xs-4 footergrid">hii</div>
+                   <div className="col-xs-4 footergrid">hiuuy</div>
+            </div>
       </div>
     );
   }

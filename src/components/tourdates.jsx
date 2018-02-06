@@ -16,8 +16,8 @@ class TourDates extends Component {
 
     // I don't know how to set up the date to always update to the current day as
     // this URL string is very weird and doesn't play nice with new Date(); I also
-    // don't know how to make a reusable datetime/city etc but this works, just a lot
-    // of copy pasting and mess if I wanted to do more than 5.
+    // don't know how to make a reusable datetime/city etc but this works, just a
+    // lot of copy pasting and mess if I wanted to do more than 5.
     fetchData() {
         fetch('https://rest.bandsintown.com/artists/Dance%20Gavin%20Dance/events?app_id=dgdsite' +
                     '&date=2018-02-07%2C2018-04-04')
@@ -71,8 +71,7 @@ class TourDates extends Component {
                             </div>
                             <div className="col-xs-4 tourdates tourvenue">
                                 {this.state.venuename1}
-                                {this.state.city1}
-                                {this.state.country1}
+                                <br/> {this.state.city1}, &nbsp;&nbsp; {this.state.country1}
                             </div>
                             <div className="col-xs-4 tourdates">
                                 <a href={this.state.id1}>Buy Tickets</a>
@@ -84,8 +83,7 @@ class TourDates extends Component {
                             </div>
                             <div className="col-xs-4 tourdates tourvenue">
                                 {this.state.venuename1}
-                                {this.state.city1}
-                                {this.state.country1}
+                                <br/> {this.state.city1}, &nbsp;&nbsp; {this.state.country1}
                             </div>
                             <div className="col-xs-4 tourdates">
                                 <a href={this.state.id2}>Buy Tickets</a>
@@ -97,8 +95,7 @@ class TourDates extends Component {
                             </div>
                             <div className="col-xs-4 tourdates tourvenue">
                                 {this.state.venuename1}
-                                {this.state.city1}
-                                {this.state.country1}
+                                <br/> {this.state.city1}, &nbsp;&nbsp; {this.state.country1}
                             </div>
                             <div className="col-xs-4 tourdates">
                                 <a href={this.state.id3}>Buy Tickets</a>
@@ -110,8 +107,7 @@ class TourDates extends Component {
                             </div>
                             <div className="col-xs-4 tourdates tourvenue">
                                 {this.state.venuename1}
-                                {this.state.city1}
-                                {this.state.country1}
+                                <br/> {this.state.city1}, &nbsp;&nbsp; {this.state.country1}
                             </div>
                             <div className="col-xs-4 tourdates">
                                 <a href={this.state.id4}>Buy Tickets</a>
@@ -123,8 +119,7 @@ class TourDates extends Component {
                             </div>
                             <div className="col-xs-4 tourdates tourvenue">
                                 {this.state.venuename1}
-                                {this.state.city1}
-                                {this.state.country1}
+                                <br/> {this.state.city1}, &nbsp;&nbsp; {this.state.country1}
                             </div>
                             <div className="col-xs-4 tourdates">
                                 <a href={this.state.id5}>Buy Tickets</a>

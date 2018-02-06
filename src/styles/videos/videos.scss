@@ -4,7 +4,6 @@
         padding: 0;
         margin-bottom: -5px;
     }
- 
     .videotitle {
         border-left: 1px solid $red;
         border-right: 1px solid $red;
@@ -12,16 +11,17 @@
         background-color: $darkGray;
         p {
             font-size: 2.75em;
-            color:$red;
+            color: $red;
             @include absolutecenter(x);
-            }
         }
     }
+}
 
 .youtubevideo {
     border-left: 2px solid black;
     border-right: 2px solid black;
 }
+
 .videomore {
     margin-bottom: 100px;
     width: 100%;
@@ -32,8 +32,11 @@
     height: 50px;
     background-color: $darkGray;
     color: $red;
-    font-size: 2.75em;
+    font-size: 1.6em;
     text-align: center;
+    @include breakpoint(md) {
+        font-size: 2.2em;
+    }
     i {
         font-size: 0.88em;
     }
@@ -43,4 +46,4 @@
         transition: ease-in 0.3s;
         color: $darkGray;
     }
-    }
+}

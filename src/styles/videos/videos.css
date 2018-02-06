@@ -28,9 +28,12 @@
   height: 50px;
   background-color: #1a1a1a;
   color: #ed8270;
-  font-size: 2.75em;
+  font-size: 1.6em;
   text-align: center;
   cursor: pointer; }
+  @media (min-width: 992px) {
+    .videomore {
+      font-size: 2.2em; } }
   .videomore i {
     font-size: 0.88em; }
   .videomore:hover {

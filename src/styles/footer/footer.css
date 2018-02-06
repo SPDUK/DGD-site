@@ -1,12 +1,21 @@
 .Footer {
-  color: #7e8084;
-  background-color: #1a1a1a;
-  height: 80px; }
+  color: #1a1a1a;
+  background-color: rgba(26, 26, 26, 0.5);
+  border-top: 1px solid black;
+  height: 80px;
+  text-align: center; }
   .Footer i {
     font-size: 1.2em; }
   .Footer a {
     color: #7e8084; }
 
 .footergrid {
-  height: 80px;
-  border: 1px solid white; }
+  height: 100%; }
+  .footergrid.disclaimer {
+    font-size: 0.7em; }
+    @media (min-width: 992px) {
+      .footergrid.disclaimer {
+        font-size: 0.8em; } }
+    @media (min-width: 1200px) {
+      .footergrid.disclaimer {
+        font-size: 1em; } }

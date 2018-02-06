@@ -1,9 +1,11 @@
 @import '.././variables.scss';
 
 .Footer {
-    color:$lightGray;
-    background-color: $darkGray;
+    color:$darkGray;
+    background-color: rgba($darkGray, 0.5);
+    border-top: 1px solid black;
     height: 80px;
+    text-align: center;
 
     i {
         font-size: 1.2em;
@@ -15,6 +17,15 @@
 }
 
 .footergrid {
-    height: 80px;
-    border: 1px solid white;
+    height: 100%;
+
+    &.disclaimer {
+        font-size: 0.7em;
+        @include breakpoint(md) {
+            font-size: 0.8em;
+        }
+        @include breakpoint(lg) {
+            font-size: 1em;
+        }
+    }
 }

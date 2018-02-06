@@ -18,7 +18,7 @@
   margin-top: 5%; }
 
 .tourdates {
-  font-size: 1em;
+  font-size: 0.85em;
   color: #f8d448;
   border: 1px solid #f8d448;
   height: 40px; }
@@ -29,8 +29,11 @@
     color: #f8d448; }
 
 .tourvenue {
-  font-size: 0.7em; }
+  font-size: 0.6em; }
   @media (min-width: 768px) {
+    .tourvenue {
+      font-size: 0.75em; } }
+  @media (min-width: 992px) {
     .tourvenue {
       font-size: 1em; } }
 

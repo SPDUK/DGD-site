@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://SPDUK.github.io/DGD-site",
   "dependencies": {
+    "moment": "^2.20.1",
     "node-sass-chokidar": "0.0.3",
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.0",

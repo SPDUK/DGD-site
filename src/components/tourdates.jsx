@@ -1,26 +1,32 @@
 import React, {Component} from 'react';
+import moment from 'moment';
 
+const dateToday = moment(new Date()).format("YYYY-MM-DD%2C2019-MM-DD").toString();
 class TourDates extends Component {
     constructor(props) {
         super(props)
-        this.state = {}
+        this.state = { 
+            dateToday: "2012-01-01%2C2020-01-01",
+            datetime1: ""
+        }
+        
     }
 
     componentDidMount() {
         this.fetchData();
-    }
+      }
 
     showMoreDates = () => {
         window.open('https://www.bandsintown.com/a/32332?came_from=234');
     }
 
-    // I don't know how to set up the date to always update to the current day as
+
+     // I don't know how to set up the date to always update to the current day as
     // this URL string is very weird and doesn't play nice with new Date(); I also
     // don't know how to make a reusable datetime/city etc but this works, just a
     // lot of copy pasting and mess if I wanted to do more than 5.
     fetchData() {
-        fetch('https://rest.bandsintown.com/artists/Dance%20Gavin%20Dance/events?app_id=dgdsite' +
-                    '&date=2018-02-07%2C2018-04-04')
+        fetch(`https://rest.bandsintown.com/artists/Dance%20Gavin%20Dance/events?app_id=dgdsite&date=${dateToday}`)
             .then(response => response.json())
             .then(response => {
                 this.setState({

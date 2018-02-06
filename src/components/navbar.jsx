@@ -14,6 +14,14 @@ constructor(props){
 scrollTopFunction() {
   window.scrollTo(0,0);
 }
+scrollTourFunction() {
+  window.scrollTo(0,500);
+}
+
+scrollVideosFunction() {
+  window.scrollTo(0,1050);
+}
+
 
 
 
@@ -31,18 +39,18 @@ scrollTopFunction() {
             </Navbar.Header>
             <Navbar.Collapse>
             <Nav>
-              <NavItem className="navlinks" id="navlink1" eventKey={1} href="https://www.google.co.uk">
-                Videos
+              <NavItem  onClick={this.scrollTourFunction} className="navlinks" id="navlink1" eventKey={1}>
+                Tour Dates
               </NavItem>
-              <NavItem className="navlinks" id="navlink2" eventKey={2} href="https://www.google.co.uk">
-               Pictures
+              <NavItem onClick={this.scrollVideosFunction} className="navlinks" id="navlink2" eventKey={2}>
+               Videos
               </NavItem>
               </Nav>
               <Nav pullRight>
-              <NavItem className="navlinks" id="navlink3" eventKey={3} href="https://www.google.co.uk">
-               Tour Info
+              <NavItem className="navlinks" id="navlink3" eventKey={3} href="http://www.riserecords.com/">
+               Rise Records
               </NavItem>
-              <NavItem className="navlinks" id="navlink4" eventKey={4} href="https://www.google.co.uk">
+              <NavItem className="navlinks" id="navlink4" eventKey={4} href="https://github.com/SPDUK/DGD-site">
                About
               </NavItem>
             </Nav>

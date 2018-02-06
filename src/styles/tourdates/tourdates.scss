@@ -7,7 +7,6 @@
     margin-bottom: 0;
     text-align: center;
     background-color: rgb(40, 40, 40);
-    color:white;
     border-radius: 0;
     font-weight: 700;
     height: 315px;
@@ -19,15 +18,28 @@
     }
 }
 .alltours {
-    margin-top: 10px;
+    margin-top: 5%;
 }
 .tourdates {
-
+    font-size: 1em;
     color:$yellow;
+    border: 1px solid $yellow;
+    height: 40px;
+    @include breakpoint(sm) {
+        font-size:1em;
+    }
     a {
         color:$yellow;
     }
 }
+.tourvenue {
+    font-size: 0.7em;
+    @include breakpoint(sm) {
+        font-size: 1em;
+    }
+}
+
+
 #tourtitle {
     font-size: 2.75em;
     height: 50px;
@@ -43,6 +55,7 @@
     }   
 }
 #tourshowmore {
+    cursor: pointer;
     height: 50px;
     font-size: 2.75em;
     padding: 0;

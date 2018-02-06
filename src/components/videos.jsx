@@ -2,7 +2,11 @@ import React, {Component} from 'react';
 
 class Videos extends Component {
 
-  render() {
+  youtubeClick = () => {
+    window.open('https://www.youtube.com/user/riserecords/search?query=dance+gavin+dance');
+  }
+
+  render(props) {
     return (
 
       <div className="videos">
@@ -37,7 +41,7 @@ class Videos extends Component {
           </div>
           <div className="row videomore">
           <div className="col-xs-12">
-            <p>More Available on Youtube <i className="fa fa-youtube"></i></p>
+            <p onClick={this.youtubeClick}>VIEW MORE ON YOUTUBE</p>
             </div>
           </div>
           </div>

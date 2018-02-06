@@ -23,6 +23,7 @@
     border-right: 2px solid black;
 }
 .videomore {
+    margin-bottom: 100px;
     width: 100%;
     border-left: 1px solid $red;
     border-right: 1px solid $red;
@@ -33,14 +34,13 @@
     color: $red;
     font-size: 2.75em;
     text-align: center;
+    i {
+        font-size: 0.88em;
+    }
+    cursor: pointer;
     &:hover {
         background-color: $red;
         transition: ease-in 0.3s;
         color: $darkGray;
     }
-    }
-
-    .tourdates {
-        border: 1px solid white;
-        height: 40px;
     }

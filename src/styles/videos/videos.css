@@ -19,6 +19,7 @@
   border-right: 2px solid black; }
 
 .videomore {
+  margin-bottom: 100px;
   width: 100%;
   border-left: 1px solid #ed8270;
   border-right: 1px solid #ed8270;
@@ -28,12 +29,11 @@
   background-color: #1a1a1a;
   color: #ed8270;
   font-size: 2.75em;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
+  .videomore i {
+    font-size: 0.88em; }
   .videomore:hover {
     background-color: #ed8270;
     transition: ease-in 0.3s;
     color: #1a1a1a; }
-
-.tourdates {
-  border: 1px solid white;
-  height: 40px; }

@@ -6,13 +6,21 @@ class TourDates extends Component {
         this.state = {}
     }
 
-
     componentDidMount() {
         this.fetchData();
     }
 
+    showMoreDates = () => {
+        window.open('https://www.bandsintown.com/a/32332?came_from=234');
+    }
+
+    // I don't know how to set up the date to always update to the current day as
+    // this URL string is very weird and doesn't play nice with new Date(); I also
+    // don't know how to make a reusable datetime/city etc but this works, just a lot
+    // of copy pasting and mess if I wanted to do more than 5.
     fetchData() {
-        fetch('https://rest.bandsintown.com/artists/Dance%20Gavin%20Dance/events?app_id=dgdsite&date=2018-02-02%2C2019-01-01')
+        fetch('https://rest.bandsintown.com/artists/Dance%20Gavin%20Dance/events?app_id=dgdsite' +
+                    '&date=2018-02-07%2C2018-04-04')
             .then(response => response.json())
             .then(response => {
                 this.setState({
@@ -40,32 +48,31 @@ class TourDates extends Component {
                     id2: response[1].url,
                     id3: response[2].url,
                     id4: response[3].url,
-                    id5: response[4].url,
-                    
-
-
+                    id5: response[4].url
                 })
             })
-        }
+    }
 
-        render(props) {
-            return (
-                <div className="container">
-                    <div className="row jumbo-links">
-                        <div id="tourtitle" className="col-xs-12">
-                            <p>
-                                TOUR DATES
-                            </p>
-                        </div>
+    render(props) {
+        return (
+            <div className="container">
+                <div className="row jumbo-links">
+                    <div id="tourtitle" className="col-xs-12">
+                        <p>
+                            TOUR DATES
+                        </p>
                     </div>
-                    <div className="jumbotron tour-jumbo">
+                </div>
+                <div className="jumbotron tour-jumbo">
                     <div className="alltours">
                         <div className="row">
                             <div className="col-xs-4 tourdates">
-                            {this.state.datetime1}
+                                {this.state.datetime1}
                             </div>
-                            <div className="col-xs-4 tourdates">
-                                {this.state.venuename1} {this.state.city1} {this.state.country1}
+                            <div className="col-xs-4 tourdates tourvenue">
+                                {this.state.venuename1}
+                                {this.state.city1}
+                                {this.state.country1}
                             </div>
                             <div className="col-xs-4 tourdates">
                                 <a href={this.state.id1}>Buy Tickets</a>
@@ -73,10 +80,12 @@ class TourDates extends Component {
                         </div>
                         <div className="row">
                             <div className="col-xs-4 tourdates">
-                            {this.state.datetime2}
+                                {this.state.datetime2}
                             </div>
-                            <div className="col-xs-4 tourdates">
-                                {this.state.venuename1} {this.state.city1} {this.state.country1}
+                            <div className="col-xs-4 tourdates tourvenue">
+                                {this.state.venuename1}
+                                {this.state.city1}
+                                {this.state.country1}
                             </div>
                             <div className="col-xs-4 tourdates">
                                 <a href={this.state.id2}>Buy Tickets</a>
@@ -84,10 +93,12 @@ class TourDates extends Component {
                         </div>
                         <div className="row">
                             <div className="col-xs-4 tourdates">
-                            {this.state.datetime3}
+                                {this.state.datetime3}
                             </div>
-                            <div className="col-xs-4 tourdates">
-                                {this.state.venuename1} {this.state.city1} {this.state.country1}
+                            <div className="col-xs-4 tourdates tourvenue">
+                                {this.state.venuename1}
+                                {this.state.city1}
+                                {this.state.country1}
                             </div>
                             <div className="col-xs-4 tourdates">
                                 <a href={this.state.id3}>Buy Tickets</a>
@@ -95,10 +106,12 @@ class TourDates extends Component {
                         </div>
                         <div className="row">
                             <div className="col-xs-4 tourdates">
-                            {this.state.datetime4}
+                                {this.state.datetime4}
                             </div>
-                            <div className="col-xs-4 tourdates">
-                                {this.state.venuename1} {this.state.city1} {this.state.country1}
+                            <div className="col-xs-4 tourdates tourvenue">
+                                {this.state.venuename1}
+                                {this.state.city1}
+                                {this.state.country1}
                             </div>
                             <div className="col-xs-4 tourdates">
                                 <a href={this.state.id4}>Buy Tickets</a>
@@ -106,29 +119,31 @@ class TourDates extends Component {
                         </div>
                         <div className="row">
                             <div className="col-xs-4 tourdates">
-                            {this.state.datetime5}
+                                {this.state.datetime5}
                             </div>
-                            <div className="col-xs-4 tourdates">
-                                {this.state.venuename1} {this.state.city1} {this.state.country1}
+                            <div className="col-xs-4 tourdates tourvenue">
+                                {this.state.venuename1}
+                                {this.state.city1}
+                                {this.state.country1}
                             </div>
                             <div className="col-xs-4 tourdates">
                                 <a href={this.state.id5}>Buy Tickets</a>
                             </div>
                         </div>
                     </div>
-                    </div>
-                    <div className="row jumbo-links">
-                        <div id="tourshowmore" className="col-xs-12">
-                            <p>
-                                VIEW FULL LIST
-                            </p>
-                            <div></div>
-                        </div>
-
-                    </div>
                 </div>
-            );
-        }
-    }
+                <div className="row jumbo-links">
+                    <div id="tourshowmore" className="col-xs-12" onClick={this.showMoreDates}>
+                        <p>
+                            VIEW FULL LIST
+                        </p>
+                        <div></div>
+                    </div>
 
-    export default TourDates;
+                </div>
+            </div>
+        );
+    }
+}
+
+export default TourDates;

@@ -4,7 +4,6 @@
   margin-bottom: 0;
   text-align: center;
   background-color: #282828;
-  color: white;
   border-radius: 0;
   font-weight: 700;
   height: 315px; }
@@ -16,12 +15,24 @@
       height: 400px; } }
 
 .alltours {
-  margin-top: 10px; }
+  margin-top: 5%; }
 
 .tourdates {
-  color: #f8d448; }
+  font-size: 1em;
+  color: #f8d448;
+  border: 1px solid #f8d448;
+  height: 40px; }
+  @media (min-width: 768px) {
+    .tourdates {
+      font-size: 1em; } }
   .tourdates a {
     color: #f8d448; }
+
+.tourvenue {
+  font-size: 0.7em; }
+  @media (min-width: 768px) {
+    .tourvenue {
+      font-size: 1em; } }
 
 #tourtitle {
   font-size: 2.75em;
@@ -37,6 +48,7 @@
     color: #f8d448; }
 
 #tourshowmore {
+  cursor: pointer;
   height: 50px;
   font-size: 2.75em;
   padding: 0;

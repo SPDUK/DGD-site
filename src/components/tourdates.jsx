@@ -73,7 +73,7 @@ class TourDates extends Component {
                     <div className="alltours">
                         <div className="row">
                             <div className="col-xs-4 tourdates">
-                                {this.state.datetime1}
+                                {moment.('MM/DD/YYY'){this.state.datetime1}}
                             </div>
                             <div className="col-xs-4 tourdates tourvenue">
                                 {this.state.venuename1}
